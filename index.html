@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#101d28" />
-    <meta name="description" content="Drei Dinge. Eine Tür. 60 Sekunden. Spiele den kurzen Mirror-Maze-Prototyp direkt im Browser." />
-    <title>Mirror Maze · Echo4ge</title>
-    <script type="module" crossorigin src="./assets/index-q_1rSP15.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-LWVWttyj.css">
+    <meta name="theme-color" content="#0d1420" />
+    <meta name="description" content="Echo4ge: kleine Spielprototypen direkt im Browser – Shadow Sprint und Mirror Maze." />
+    <title>Echo4ge · Spiele</title>
+    <script>
+      // Old links pointed at the root (?game=…, challenge links with #gegner=…): forward them to the game's folder.
+      (function () {
+        var game = new URLSearchParams(location.search).get('game');
+        var folders = { 'shadow-sprint': 'shadow-sprint/', 'mirror-maze': 'mirror-maze/' };
+        if (folders[game]) location.replace(folders[game] + location.search + location.hash);
+      })();
+    </script>
+    <style>
+      :root { color-scheme: dark; --bg: #0d1420; --card: #161f30; --line: #2b3a55; --text: #eef3f8; --muted: #a7b6c6; --mint: #74f0cf; --violet: #b99bff; --gold: #f5be58; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 0%, #1d2b44 0, var(--bg) 55%); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      main { max-width: 560px; margin: 0 auto; padding: 32px 16px 40px; }
+      .eyebrow { color: var(--gold); font-size: 12px; font-weight: 800; letter-spacing: .14em; margin: 0; }
+      h1 { font-size: clamp(30px, 8vw, 40px); line-height: 1.1; margin: 10px 0 8px; }
+      .lead { color: var(--muted); margin: 0 0 24px; line-height: 1.5; }
+      .games { display: grid; gap: 14px; }
+      a.game { display: block; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+      a.game:hover, a.game:focus-visible { transform: translateY(-2px); outline: none; }
+      a.game.shadow:hover, a.game.shadow:focus-visible { border-color: var(--violet); }
+      a.game.maze:hover, a.game.maze:focus-visible { border-color: var(--mint); }
+      .tag { font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+      .shadow .tag { color: var(--violet); }
+      .maze .tag { color: var(--mint); }
+      h2 { margin: 6px 0 6px; font-size: 24px; }
+      .game p { margin: 0 0 12px; color: var(--muted); line-height: 1.45; }
+      .play { font-weight: 800; }
+      .shadow .play { color: var(--violet); }
+      .maze .play { color: var(--mint); }
+      footer { margin-top: 28px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    </style>
   </head>
-  <body><div id="app"></div></body>
+  <body>
+    <main>
+      <p class="eyebrow">ECHO4GE · BROWSER-SPIELE</p>
+      <h1>Welches Spiel<br />willst du spielen?</h1>
+      <p class="lead">Kleine Prototypen, direkt im Browser. Keine Anmeldung, am besten auf dem Handy.</p>
+      <div class="games">
+        <a class="game shadow" href="shadow-sprint/?game=shadow-sprint">
+          <span class="tag">LAUFSPIEL · EIN KNOPF</span>
+          <h2>Shadow Sprint</h2>
+          <p>Schlag deinen eigenen besten Lauf. Frühere Läufe laufen als Echos mit und öffnen dir den Weg – drei Level.</p>
+          <span class="play">Loslaufen →</span>
+        </a>
+        <a class="game maze" href="mirror-maze/?game=mirror-maze">
+          <span class="tag">SCHLEICHSPIEL · 60 SEKUNDEN</span>
+          <h2>Mirror Maze</h2>
+          <p>Echoborn vs. Schwiegermonster: drei Dinge holen, Kochtöpfe umgehen, peinlichen Fragen ausweichen – und nicht im Spiegel gesehen werden.</p>
+          <span class="play">In die Wohnung →</span>
+        </a>
+      </div>
+      <footer>Shadow Sprint 0.9.5 · Mirror Maze 0.9.0 · Prototypen der Echo4ge-Runde</footer>
+    </main>
+  </body>
 </html>
