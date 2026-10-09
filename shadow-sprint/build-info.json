@@ -1,7 +1,7 @@
 {
-  "version": "0.9.7",
+  "version": "0.9.8",
   "ruleVersion": "mirror-maze-level1-v0.11-r1",
   "shadowSprintRules": "shadow-sprint-v0.3",
-  "contentSha256": "71f1f67387f7f3df045189f7f3afde00f5b33c8470946f11e676761f1274b585",
-  "sourceCommit": "b846ae5428d009c4b24ce64e9679d444a1627f61"
+  "contentSha256": "e6113bedb253f8d0e2d6b7ca4091d2da151d0ce921dbfab14e8ec7c9e7451745",
+  "sourceCommit": "2448aefe4478c9d2d62cfe9a6499d453090d601a"
 }
