@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0d1420" />
-    <meta name="description" content="Echo4ge: kleine Spielprototypen direkt im Browser – Shadow Sprint und Mirror Maze." />
+    <meta name="description" content="Echo4ge: Spielprototypen direkt im Browser – AI-Kimia, Shadow Sprint und Mirror Maze." />
     <title>Echo4ge · Spiele</title>
     <script>
       // Old links pointed at the root (?game=…, challenge links with #gegner=…): forward them to the game's folder.
       (function () {
         var game = new URLSearchParams(location.search).get('game');
-        var folders = { 'shadow-sprint': 'shadow-sprint/', 'mirror-maze': 'mirror-maze/' };
+        var folders = { 'ai-kimia': 'ai-kimia/', 'shadow-sprint': 'shadow-sprint/', 'mirror-maze': 'mirror-maze/' };
         if (folders[game]) location.replace(folders[game] + location.search + location.hash);
       })();
     </script>
@@ -30,6 +30,9 @@
       .tag { font-size: 11px; font-weight: 800; letter-spacing: .12em; }
       .shadow .tag { color: var(--violet); }
       .maze .tag { color: var(--mint); }
+      a.game.kimia { border-color: #6b5a2a; background: linear-gradient(160deg, #1d2a24, var(--card) 70%); }
+      a.game.kimia:hover, a.game.kimia:focus-visible { border-color: var(--gold); }
+      .kimia .tag, .kimia .play { color: var(--gold); }
       h2 { margin: 6px 0 6px; font-size: 24px; }
       .game p { margin: 0 0 12px; color: var(--muted); line-height: 1.45; }
       .play { font-weight: 800; }
@@ -44,6 +47,12 @@
       <h1>Welches Spiel<br />willst du spielen?</h1>
       <p class="lead">Kleine Prototypen, direkt im Browser. Keine Anmeldung, am besten auf dem Handy.</p>
       <div class="games">
+        <a class="game kimia" href="ai-kimia/?game=ai-kimia">
+          <span class="tag">DAS HAUPTSPIEL · ACTION-ROGUELIKE</span>
+          <h2>AI-Kimia</h2>
+          <p>Carl Jung meets Mini-LoL Brotato Vampires: Archetyp × Tarot-Karte × Element, Runs durch Arkana-Mechanika – und am Ende wartet Echoborn.</p>
+          <span class="play">Den Lauf beginnen →</span>
+        </a>
         <a class="game shadow" href="shadow-sprint/?game=shadow-sprint">
           <span class="tag">LAUFSPIEL · EIN KNOPF</span>
           <h2>Shadow Sprint</h2>
@@ -57,7 +66,7 @@
           <span class="play">In die Wohnung →</span>
         </a>
       </div>
-      <footer>Shadow Sprint 0.9.6 · Mirror Maze 0.9.0 · Prototypen der Echo4ge-Runde</footer>
+      <footer>AI-Kimia 0.2.0 · Shadow Sprint 0.9.11 · Mirror Maze 0.9.0 · Prototypen der Echo4ge-Runde</footer>
     </main>
   </body>
 </html>
