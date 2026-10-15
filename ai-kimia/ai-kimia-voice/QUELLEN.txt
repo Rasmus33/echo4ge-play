@@ -1,0 +1,23 @@
+AI-Kimia – Stimmen (KI-Platzhalter bis zu echten Voice-overs)
+
+Eingesprochen lokal mit Chatterbox Multilingual (Resemble AI, MIT-Lizenz, https://github.com/resemble-ai/chatterbox;
+enthält ein unhörbares Wasserzeichen als KI-Kennzeichnung). Grundstimme je Figur aus Piper (https://github.com/OHF-Voice/piper1-gpl)
+mit diesen Stimmmodellen (https://huggingface.co/rhasspy/piper-voices):
+- de_DE-kerstin-low: Kerstin (rhasspy/dataset-voice-kerstin), CC0
+- de_DE-mls-medium: Multilingual LibriSpeech Deutsch (openslr.org/94), CC BY 4.0
+- de_DE-thorsten-high: Thorsten-Voice (Thorsten Müller), CC0
+- de_DE-thorsten_emotional-medium: Thorsten-Voice Emotional (Thorsten Müller), CC0
+
+Figuren:
+- kimia: de_DE-mls-medium, Sprecher 40
+- liora: de_DE-mls-medium, Sprecher 151
+- mirae: de_DE-mls-medium, Sprecher 46
+- solenya: de_DE-kerstin-low
+- kaelen: de_DE-thorsten-high
+- tharo: de_DE-mls-medium, Sprecher 156
+- nivor: de_DE-thorsten_emotional-medium, Sprecher 7
+- echoborn: de_DE-mls-medium, Sprecher 122
+
+CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): Multilingual LibriSpeech – V. Pratap, Q. Xu, A. Sriram, G. Synnaeve,
+R. Collobert, „MLS: A Large-Scale Multilingual Dataset for Speech Research“, Interspeech 2020; Aufnahmen von LibriVox.
+Geändert: neu eingesprochen, geschnitten, in der Lautstärke angeglichen. Hall und Echo entstehen erst im Spiel.
