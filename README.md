@@ -4,7 +4,7 @@ Nur die gebauten Spieldateien (öffentlich). Quellcode, Dokumentation und Origin
 
 Startseite mit Spielauswahl: https://rasmus33.github.io/echo4ge-play/
 
-- `ai-kimia/` – AI-Kimia 0.3.0 „Das Echo“ (Hauptspiel): `ai-kimia/?game=ai-kimia`. In dieser `index.html` zusätzlich Titel und Beschreibung für Link-Vorschauen angepasst.
+- `ai-kimia/` – AI-Kimia 0.3.1 „Das Echo“ mit natürlicheren Stimmen (Hauptspiel): `ai-kimia/?game=ai-kimia`. In dieser `index.html` zusätzlich Titel und Beschreibung für Link-Vorschauen angepasst.
 - `shadow-sprint/` – Shadow Sprint 0.9.11: `shadow-sprint/?game=shadow-sprint` (Level 4 „Drei Spuren“: `&level=4`, Level 5 „Koloss“: `&level=5`, Boss-Test Level 6 „Spiegel“: `&level=6`, Level 7 „Yin und Yang“: `&level=7`)
 - `mirror-maze/` – Mirror Maze 0.9.0: `mirror-maze/?game=mirror-maze`
 
