@@ -3,6 +3,6 @@
   "ruleVersion": "mirror-maze-level1-v0.11-r1",
   "shadowSprintRules": "shadow-sprint-v0.3",
   "aiKimiaRules": "ai-kimia-v0.6",
-  "contentSha256": "d0b91e98d7a482064b1fe4e4bd646f2ef5d11e505c3e5c4156ee128489757451",
-  "sourceCommit": "f9133cb4347e2f70ddef0e18c6642fb17327a14f"
+  "contentSha256": "40e23f2142e98229dd79bf7aa583fb7731906db6fa15328ab717c1fb89d83e09",
+  "sourceCommit": "c662f6a648203ad3e5a7eb2982553719bf638845"
 }
