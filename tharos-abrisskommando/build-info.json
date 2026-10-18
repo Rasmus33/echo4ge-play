@@ -1,0 +1,8 @@
+{
+  "version": "0.10.0",
+  "ruleVersion": "mirror-maze-level1-v0.11-r1",
+  "shadowSprintRules": "shadow-sprint-v0.3",
+  "abrisskommandoRules": "abrisskommando-v0.1",
+  "contentSha256": "c384eca929a547388e3eeead83fd62413ac569dbdd8d8194d3bacd7253fb2379",
+  "sourceCommit": "0baeff4e2c4843596f0a59913d5db29e7d0adccd"
+}
