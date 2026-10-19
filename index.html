@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0d1420" />
-    <meta name="description" content="Echo4ge: Spielprototypen direkt im Browser – AI-Kimia, Shadow Sprint, Mirror Maze, Tharo’s Abrisskommando und Face/Off." />
+    <meta name="description" content="Echo4ge: Spielprototypen direkt im Browser – AI-Kimia, Shadow Sprint, Mirror Maze, Tharo’s Abrisskommando, Face/Off und Nivor’s Nachtlauf." />
     <title>Echo4ge · Spiele</title>
     <script>
       // Old links pointed at the root (?game=…, challenge links with #gegner=…): forward them to the game's folder.
       (function () {
         var game = new URLSearchParams(location.search).get('game');
-        var folders = { 'ai-kimia': 'ai-kimia/', 'shadow-sprint': 'shadow-sprint/', 'mirror-maze': 'mirror-maze/', 'tharos-abrisskommando': 'tharos-abrisskommando/', 'face-off': 'face-off/' };
+        var folders = { 'ai-kimia': 'ai-kimia/', 'shadow-sprint': 'shadow-sprint/', 'mirror-maze': 'mirror-maze/', 'tharos-abrisskommando': 'tharos-abrisskommando/', 'face-off': 'face-off/', 'nivors-nachtlauf': 'nivors-nachtlauf/' };
         if (folders[game]) location.replace(folders[game] + location.search + location.hash);
       })();
     </script>
@@ -44,6 +44,9 @@
       a.game.mask { border-color: #6a5420; background: linear-gradient(160deg, #10283a, var(--card) 70%); }
       a.game.mask:hover, a.game.mask:focus-visible { border-color: #ffd166; }
       .mask .tag, .mask .play { color: #ffd166; }
+      a.game.night { border-color: #4a3480; background: linear-gradient(160deg, #141433, var(--card) 70%); }
+      a.game.night:hover, a.game.night:focus-visible { border-color: #9effc8; }
+      .night .tag, .night .play { color: #9effc8; }
       footer { margin-top: 28px; color: var(--muted); font-size: 12px; line-height: 1.5; }
     </style>
   </head>
@@ -77,6 +80,12 @@
           <p>Zwölf gleiche Masken, eine davon bist du. Die anderen lernen deinen Tanz und ahmen ihn nach. Erkennst du dich am Ende im Spiegel – bevor der Maskenmeister dich entlarvt? Mit „Findest du mich?“-Link für WhatsApp.</p>
           <span class="play">Zum Ball →</span>
         </a>
+        <a class="game night" href="nivors-nachtlauf/?game=nivors-nachtlauf">
+          <span class="tag">NEU · STEALTH-RENNEN</span>
+          <h2>Nivor’s Nachtlauf</h2>
+          <p>Silent Stride: Du bist langsamer als alle. Bleib im Schatten, lauf im Windschatten der anderen und sorg für kleine „Unfälle“ – ohne dass dich jemand sieht. Stärke liegt nicht im Tempo, sondern im Timing.</p>
+          <span class="play">In die Nacht →</span>
+        </a>
         <a class="game maze" href="mirror-maze/?game=mirror-maze">
           <span class="tag">SCHLEICHSPIEL · 60 SEKUNDEN</span>
           <h2>Mirror Maze</h2>
@@ -84,7 +93,7 @@
           <span class="play">In die Wohnung →</span>
         </a>
       </div>
-      <footer>AI-Kimia 0.7.0 · Shadow Sprint 0.9.11 · Tharo’s Abrisskommando 0.1.0 · Face/Off 0.1.0 · Mirror Maze 0.9.0 · Prototypen der Echo4ge-Runde</footer>
+      <footer>AI-Kimia 0.7.0 · Shadow Sprint 0.9.11 · Tharo’s Abrisskommando 0.1.0 · Face/Off 0.1.0 · Nivor’s Nachtlauf 0.1.0 · Mirror Maze 0.9.0 · Prototypen der Echo4ge-Runde</footer>
     </main>
   </body>
 </html>

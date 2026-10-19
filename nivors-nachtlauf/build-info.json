@@ -1,0 +1,8 @@
+{
+  "version": "0.10.0",
+  "ruleVersion": "mirror-maze-level1-v0.11-r1",
+  "shadowSprintRules": "shadow-sprint-v0.3",
+  "nachtlaufRules": "nachtlauf-v0.1",
+  "contentSha256": "4a1154ec6e10fdd81b0e26e8f7fb31867fbf0893ece83daddd497c7b7d80db60",
+  "sourceCommit": "730be86a5fab56506804515450ae624b230e789c"
+}
