@@ -1,8 +1,11 @@
 {
-  "version": "0.10.0",
+  "version": "0.12.0",
   "ruleVersion": "mirror-maze-level1-v0.11-r1",
   "shadowSprintRules": "shadow-sprint-v0.3",
-  "nachtlaufRules": "nachtlauf-v0.1",
-  "contentSha256": "4a1154ec6e10fdd81b0e26e8f7fb31867fbf0893ece83daddd497c7b7d80db60",
-  "sourceCommit": "730be86a5fab56506804515450ae624b230e789c"
+  "aiKimiaRules": "ai-kimia-v0.7",
+  "faceOffRules": "face-off-v0.1",
+  "abrisskommandoRules": "abrisskommando-v0.1",
+  "nachtlaufRules": "nachtlauf-v0.2",
+  "contentSha256": "3737cd3e7b94b971d846229d888344e69d8a51cc4adda5aef95ff355c0fda007",
+  "sourceCommit": "e922046903629781fa2b485592189fd2b82ea0b5"
 }
